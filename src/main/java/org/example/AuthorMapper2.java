@@ -5,7 +5,7 @@ import org.mapstruct.Mapping;
 import org.mapstruct.Mappings;
 
 @Mapper
-public interface AuthorMapper {
+public interface AuthorMapper2 {
 
 //    AuthorDTO entityToDto(Author entity);
 //
@@ -16,14 +16,14 @@ public interface AuthorMapper {
             @Mapping(target="lastName", source="entity.authorLastName"),
             @Mapping(target="biography", source="entity.authorBiography")
     })
-    AuthorDTO entityToDto(Author entity);
+    AuthorDTO entityToDto(Author2 entity);
 
     @Mappings({
             @Mapping(target="authorFirstName", source="dto.firstName"),
             @Mapping(target="authorLastName", source="dto.lastName"),
             @Mapping(target="authorBiography", source="dto.biography")
     })
-    Author dtoToEntity(AuthorDTO dto);
+    Author2 dtoToEntity(AuthorDTO dto);
 
 
 }

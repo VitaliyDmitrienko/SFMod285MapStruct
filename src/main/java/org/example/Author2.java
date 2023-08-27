@@ -1,6 +1,6 @@
 package org.example;
 
-public class Author {
+public class Author2 {
 
     private String authorFirstName;
 
